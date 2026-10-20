@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a0d12">
+<title>Seoul 26–29 Oct</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚇</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Noto+Sans+Thai:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0d12;--card:#141922;--ink:#e6edf3;--mut:#8b949e;--line:#272e38;--a:#3fb950;--g:#3fb950;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+body{margin:0;background:radial-gradient(60% 40% at 100% 28%,color-mix(in srgb,#3fb950 14%,transparent),transparent) fixed,var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans","Noto Sans Thai",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+.wrap{max-width:640px;margin:0 auto;padding:16px 16px 48px}
+.hero{background:linear-gradient(160deg,color-mix(in srgb,var(--g) 9%,var(--card)),var(--card) 62%);border:1px solid var(--line);border-radius:26px;padding:18px;margin:0 0 14px;box-shadow:0 24px 60px -36px var(--g)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.pill{font-weight:800;font-size:.74rem;letter-spacing:.06em;color:var(--g);background:color-mix(in srgb,var(--g) 14%,transparent);border:1px solid color-mix(in srgb,var(--g) 35%,transparent);border-radius:999px;padding:6px 14px}
+.dn{font-weight:700;font-size:.72rem;letter-spacing:.06em;color:var(--mut)}
+h1{font-size:1.6rem;line-height:1.25;margin:16px 0 4px;font-weight:800}
+.lead{margin:0 0 14px;color:var(--mut);font-size:.88rem}
+.fl{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 10px}
+.box{background:color-mix(in srgb,var(--ink) 4%,var(--card));border:1px solid var(--line);border-radius:16px;padding:10px 12px;display:flex;flex-direction:column;gap:2px}
+.bl{font-size:.72rem;font-weight:700;color:var(--mut)}
+.box b{font-size:.95rem;font-weight:800}
+.box small{font-size:.74rem;color:var(--mut)}
+.hotel{flex-direction:row;align-items:center;gap:12px;padding:12px 14px}
+.hotel>div{flex:1;display:flex;flex-direction:column;gap:2px;min-width:0}
+.hi{font-size:1.6rem}
+.bd{font-size:.72rem;font-weight:700;color:var(--g);background:color-mix(in srgb,var(--g) 12%,transparent);border:1px solid color-mix(in srgb,var(--g) 35%,transparent);border-radius:10px;padding:5px 10px;text-align:center}
+.sub{color:var(--mut);margin:0 0 12px;font-size:.92rem}
+
+
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:0 0 0 8px var(--bg);display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:5px;margin:0 8px 8px}
+.tab{font:inherit;cursor:pointer;border:1px solid transparent;background:transparent;color:var(--ink);border-radius:15px;padding:8px 4px;line-height:1.25}
+.tab b{display:block;font-size:1rem}
+.tab span{font-size:.75rem;color:var(--mut)}
+.tab[aria-selected="true"]{background:var(--c);border-color:var(--c);color:#0a0d12;font-weight:700}
+.tab[aria-selected="true"] span{color:#0a0d12}
+.tab:focus-visible,.go:focus-visible,.stop:focus-visible,.map:focus-visible{outline:3px solid var(--a);outline-offset:2px}
+.dh{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;margin:20px 0 10px}
+.dl{font-weight:800;font-size:.78rem;letter-spacing:.1em;color:var(--a)}
+h2{font-size:1.3rem;line-height:1.25;font-weight:800;margin:2px 0 0}
+.dp{font-size:.78rem;color:var(--mut);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:5px 10px;white-space:nowrap}
+ol{list-style:none;margin:0;padding:0}
+li{position:relative;padding-left:38px}
+li::before{content:"";position:absolute;left:11px;top:0;bottom:0;width:6px;background:var(--a)}
+li:first-child::before{top:22px}
+li:last-child::before{bottom:calc(100% - 22px)}
+li:only-child::before{display:none}
+.dot{position:absolute;left:5px;top:12px;width:18px;height:18px;box-sizing:border-box;border-radius:50%;background:var(--card);border:4px solid var(--a);z-index:1;transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s,background .2s}
+li.on .dot{background:var(--a);transform:scale(1.4);box-shadow:0 0 0 4px color-mix(in srgb,var(--a) 28%,transparent),0 0 18px 3px var(--a)}
+li.on .stop .n{text-shadow:0 0 14px color-mix(in srgb,var(--a) 60%,transparent)}
+.stop{all:unset;box-sizing:border-box;display:block;width:100%;cursor:pointer;padding:10px 0}
+.stop .t{font-weight:700;color:var(--a);font-size:.9rem}
+.stop .n{font-weight:600;font-size:1.02rem}
+.stop .s{color:var(--mut);font-size:.85rem}
+.panel{margin:0 0 10px;background:var(--card);border:1px solid var(--a);border-radius:16px;padding:12px 14px;box-shadow:0 0 0 1px color-mix(in srgb,var(--a) 30%,transparent),0 10px 30px -10px color-mix(in srgb,var(--a) 55%,transparent)}
+.panel p{margin:0 0 10px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.map,.go{font:inherit;font-weight:600;font-size:.92rem;text-decoration:none;cursor:pointer;border-radius:10px;padding:8px 14px;border:1px solid var(--a)}
+.map{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-align:center;color:var(--ink);background:color-mix(in srgb,var(--a) 12%,var(--card));border-radius:14px;padding:12px 8px;transition:transform .15s,box-shadow .2s}
+.map small{font-weight:400;font-size:.7rem;color:var(--mut)}
+.ic{font-size:1.5rem;line-height:1.1}
+.go{grid-column:1/-1;color:#0a0d12;background:var(--a);border-radius:14px;padding:12px 14px;transition:transform .15s,box-shadow .2s}
+.map:active,.go:active{transform:scale(.97)}
+.map:hover,.go:hover{box-shadow:0 0 16px -2px var(--a)}
+.next{color:var(--mut);font-size:.8rem;margin:8px 0 0}
+.mp{width:100%;height:auto;display:block;border-radius:10px;background:var(--bg);border:1px solid var(--line);margin:0 0 6px}
+.mp text{font:600 12px "Plus Jakarta Sans","Noto Sans Thai",system-ui,sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--bg);stroke-width:4px}
+.mp text.mt{font-weight:400;font-size:10.5px;fill:var(--mut)}
+.cap{color:var(--mut);font-size:.78rem;margin:0 0 10px !important}
+@media (prefers-reduced-motion:no-preference){.panel{animation:pop .3s cubic-bezier(.34,1.4,.64,1);transform-origin:top left}li.on .dot{animation:glow 2.2s ease-in-out infinite}@keyframes pop{from{opacity:0;transform:scale(.94) translateY(-6px)}}@keyframes glow{50%{box-shadow:0 0 0 7px color-mix(in srgb,var(--a) 14%,transparent),0 0 26px 6px var(--a)}}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="top"><span class="pill">SEOUL TRIP 2026</span><span class="dn">4 DAYS / 3 NIGHTS</span></div>
+    <h1>โซล 26–29 ตุลาคม</h1>
+    <p class="lead">แผนเที่ยวโซล ช้อปปิ้ง คาเฟ่ อาหารโลคอล &amp; city run</p>
+    <div class="fl">
+      <div class="box"><div class="bl">✈️ ขาไป (YP 602)</div><b>25 Oct · 22:55 น.</b><small>ถึง ICN 06:35 (26 Oct)</small></div>
+      <div class="box"><div class="bl">🛬 ขากลับ (YP 601)</div><b>29 Oct · 17:15 น.</b><small>ถึง BKK 21:25 น.</small></div>
+    </div>
+    <div class="box hotel"><span class="hi">🏨</span><div><b>L7 Hongdae Hotel</b><small>141 Yanghwa-ro, Mapo-gu · เช็คอิน 15:00 น.</small></div><span class="bd">Airport Bus 6002</span></div>
+  </header>
+  <p class="sub">แตะที่สถานีแต่ละจุดเพื่อดูรายละเอียด แล้วกด “ไปจุดต่อไป”</p>
+  
+    
+    
+    
+  
+  <div class="tabs" id="tabs" role="tablist"></div>
+  <div class="dh"><div><div class="dl" id="dl"></div><h2 id="dt"></h2></div><span class="dp" id="dp"></span></div>
+  <ol id="list"></ol>
+</div>
+<script>
+var D=[
+{d:"26 Oct",w:"จ.",c:"#3fb950",t:"Hongdae → Gangnam → Jongno",s:[
+["08:00","ICN T1 → บัส 6002","Terminal 1 ชั้น 1 (1F) ประตู 5","ลงเครื่อง 06:35 แล้วขึ้นบัสเข้า Hongdae","Incheon International Airport Terminal 1"],
+["09:30","L7 Hongdae + คาเฟ่","141 Yanghwa-ro, Mapo-gu","ฝากกระเป๋าไว้ก่อน แล้วแวะคาเฟ่สักที่: Blue Bottle Hongdae / Layered Yeonnam / JAMJAM / Parole & Langue","L7 Hongdae by LOTTE"],
+["11:00","Bongeunsa Temple (วัดพงอึนซา)","Line 9 Bongeunsa Exit 1 · ~40 นาทีจากฮงแด","ออกจากฮงแดราว 10:15","Bongeunsa Temple Seoul"],
+["12:30","Odarijip Ganjang Gejang","Yeoksam Exit 1","มื้อกลางวัน เช็ควันเวลาเปิดร้านก่อนไป","Odarijip Ganjang Gejang Gangnam"],
+["14:30","กลับ L7 เช็คอิน + พัก","เช็คอินได้ตั้งแต่ 15:00","พักชาร์จแบตหลังบินกลางคืน ก่อนออกภาคค่ำ","L7 Hongdae by LOTTE"],
+["17:30","Seosulla-gil Road","Line 3 Jongno 3(sam)-ga Exit 7, 8 · ~20 นาทีจากฮงแด","เดินเล่นช่วงพระอาทิตย์ตก","Seosulla-gil Seoul"],
+["19:00","ตลาดโต้รุ่ง เต็นท์แดง","Euljiro 3-ga Exit 4 หรือ Jongno 3(sam)-ga Exit 4","มื้อค่ำ นั่งกินในเต็นท์","Euljiro 3-ga Station Exit 4"]]},
+{d:"27 Oct",w:"อ.",c:"#f0883e",t:"Seochon → Seongsu → Hongdae",s:[
+["10:00","Camel Coffee + เดินเล่น Seochon","Gyeongbokgung Exit 4","ร้านเปิด 8 โมง วังปิดวันอังคาร เลยเดินย่านโดยรอบแทน","Camel Coffee Seochon Seoul"],
+["12:30","Somunnan Seongsu Pork Back-bone Stew","ย่าน Seongsu","มื้อกลางวัน ปักหมุดจากชื่อร้านอีกครั้ง","Somunnan Seongsu Pork Back-bone Stew"],
+["14:00","Daelim Changgo + ช้อป Seongsu","Ttukseom Exit 8","ถ้ามีเวลาแวะ NYUNYU, Haru Coffee House (เดิน ~400 ม. จาก Seongsu Exit 4), Tongue Planet","Daelim Changgo Seongsu"],
+["16:30","Seoul Forest (ถ้ายังไหว)","Seoul Forest Exit 3 หรือ Ttukseom Exit 8","เดินรับแสงเย็นและใบไม้เปลี่ยนสี","Seoul Forest"],
+["19:00","Kim Sook Sung (김숙성)","Daeheung Station Exit 4","เปิด 11:30–01:00 (ส.–อา. 12:00–24:00) หรือสลับเป็น Moggumung / Woojujip ที่ Hongdae","Kim Sook Sung Daeheung Seoul"]]},
+{d:"28 Oct",w:"พ.",c:"#d29922",t:"Mangwon → Gangnam → Dosan",s:[
+["10:00","Capet Mangwon","Mangwon Exit 2","คาเฟ่ตอนเช้า","Capet Mangwon Seoul"],
+["11:15","มื้อกลางวันเร็วๆ ที่ตลาด Mangwon","แล้วออกเดินทาง 12:00","Line 6 ต่อ Line 2 ไป Gangnam ใช้เวลาราว 45–50 นาที","Mangwon Market Seoul"],
+["13:00","Derna Clinic","Gangnam Exit 10","เวลาเสร็จขึ้นกับคลินิก ถ้าจะวิ่งเช้าวันพฤหัส ถามคลินิกก่อนว่าทำได้ไหม","Derna Clinic Gangnam"],
+["15:30","Sinsa Garosugil","Sinsa Station","เดินเล่นเติมช่วงว่าง ปรับเวลาตามคลินิก","Garosugil Sinsa Seoul"],
+["18:00","Nudake / Supreme / Chrome Hearts","Apgujeong Rodeo Exit 5","ช้อปย่าน Dosan","Nudake Dosan Seoul"],
+["19:30","Chupungnyeong Kal Grilled Pork Belly","Apgujeong Rodeo Exit 5","ร้านปิด 23:00","Chupungnyeong Kal Apgujeong"]]},
+{d:"29 Oct",w:"พฤ.",c:"#bc8cff",t:"City run → กลับบ้าน",s:[
+["06:15","ออกจาก L7 ไป Gyeongbokgung","Gyeongbokgung Exit 4 · ~35 นาที","ตัด Banpo ออกเพราะไกลเกินไปสำหรับเช้าวันกลับ","Gyeongbokgung Station Exit 4"],
+["07:00","City run รอบ Gyeongbokgung","Gyeongbokgung","วิ่งรอบวังตอนเช้า","Gyeongbokgung Palace Seoul"],
+["08:30","Cafe Onion Anguk / Layered","Anguk Exit 3","กาแฟและขนมหลังวิ่ง","Cafe Onion Anguk"],
+["10:15","กลับ Hongdae อาบน้ำ เช็คเอาต์","L7 Hongdae","เช็คเวลาเช็คเอาต์ของโรงแรม","L7 Hongdae by LOTTE"],
+["11:00","เดินเล่น กินข้าวร้านประจำ","Hongdae","ซื้อของฝากชิ้นสุดท้าย","Hongdae Seoul"],
+["12:45","บัส 6002 → ICN","เลื่อนจาก 13:30","เผื่อรถติดและเวลาเช็คอิน ใช้เวลาราว 1.5 ชม.","Incheon International Airport Terminal 1"],
+["17:15","YP 601 → BKK","ถึง BKK 21:25","ขอให้เดินทางปลอดภัย","Incheon International Airport Terminal 1"]]}
+];
+var di=0,si=0,tabs=document.getElementById("tabs"),list=document.getElementById("list"),dt=document.getElementById("dt");
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+var C={"Incheon International Airport Terminal 1":[37.4492,126.4512],"L7 Hongdae by LOTTE":[37.5572,126.9246],"Bongeunsa Temple Seoul":[37.5146,127.0572],"Odarijip Ganjang Gejang Gangnam":[37.5006,127.0364],"Seosulla-gil Seoul":[37.5704,126.9922],"Euljiro 3-ga Station Exit 4":[37.5661,126.9926],"Camel Coffee Seochon Seoul":[37.5772,126.9715],"Somunnan Seongsu Pork Back-bone Stew":[37.5460,127.0560],"Daelim Changgo Seongsu":[37.5440,127.0610],"Seoul Forest":[37.5444,127.0374],"Kim Sook Sung Daeheung Seoul":[37.5477,126.9427],"Capet Mangwon Seoul":[37.5560,126.9095],"Mangwon Market Seoul":[37.5561,126.9055],"Derna Clinic Gangnam":[37.4985,127.0275],"Garosugil Sinsa Seoul":[37.5200,127.0230],"Nudake Dosan Seoul":[37.5256,127.0390],"Chupungnyeong Kal Apgujeong":[37.5270,127.0380],"Gyeongbokgung Station Exit 4":[37.5759,126.9735],"Gyeongbokgung Palace Seoul":[37.5796,126.9770],"Cafe Onion Anguk":[37.5766,126.9854],"Hongdae Seoul":[37.5563,126.9236]};
+function km(a,b){var r=Math.PI/180,x=(b[1]-a[1])*r*Math.cos((a[0]+b[0])/2*r),y=(b[0]-a[0])*r;return 6371*Math.sqrt(x*x+y*y)}
+function dirUrlOld(s,n){return "https://www.google.com/maps/dir/?api=1&amp;origin="+encodeURIComponent(s[4])+"&amp;destination="+encodeURIComponent(n[4])+"&amp;travelmode=transit"}
+var K={"Incheon International Airport Terminal 1":"인천국제공항 제1여객터미널","L7 Hongdae by LOTTE":"롯데 L7 홍대","Bongeunsa Temple Seoul":"봉은사","Odarijip Ganjang Gejang Gangnam":"오다리집 간장게장","Seosulla-gil Seoul":"서순라길","Euljiro 3-ga Station Exit 4":"을지로3가역 4번 출구","Camel Coffee Seochon Seoul":"카멜커피 서촌","Somunnan Seongsu Pork Back-bone Stew":"소문난성수감자탕","Daelim Changgo Seongsu":"대림창고 성수","Seoul Forest":"서울숲","Kim Sook Sung Daeheung Seoul":"김숙성 대흥","Mangwon Market Seoul":"망원시장","Garosugil Sinsa Seoul":"신사 가로수길","Nudake Dosan Seoul":"누데이크 도산","Chupungnyeong Kal Apgujeong":"추풍령칼삼겹살 압구정","Gyeongbokgung Station Exit 4":"경복궁역 4번 출구","Gyeongbokgung Palace Seoul":"경복궁","Cafe Onion Anguk":"카페 어니언 안국","Hongdae Seoul":"홍대입구역"};
+var T={"Incheon International Airport Terminal 1>L7 Hongdae by LOTTE":90,"Hongdae Seoul>Incheon International Airport Terminal 1":90,"L7 Hongdae by LOTTE>Bongeunsa Temple Seoul":40,"L7 Hongdae by LOTTE>Seosulla-gil Seoul":20};
+function nm(s){return K[s[4]]||s[4]}
+function nvSearch(s){return "https://map.naver.com/p/search/"+encodeURIComponent(nm(s))}
+function wx(c){return (c[1]*20037508.34/180).toFixed(1)}
+function wy(c){return (Math.log(Math.tan((90+c[0])*Math.PI/360))*6378137).toFixed(1)}
+function dirUrl(s,n){var a=C[s[4]],b=C[n[4]];if(!a||!b)return nvSearch(n);return "https://map.naver.com/p/directions/"+wx(a)+","+wy(a)+","+encodeURIComponent(nm(s))+",,/"+wx(b)+","+wy(b)+","+encodeURIComponent(nm(n))+",,/-/transit"}
+function eta(a,b,s,n){var o=T[s[4]+">"+n[4]];if(o)return o;var r=km(a,b)*1.3,m=r<1.2?r/4.5*60:10+r/28*60;return Math.max(5,Math.round(m/5)*5)}
+function mapHtml(s,nx){
+  var a=C[s[4]];if(!a)return "";
+  var b=nx&&C[nx[4]],W=320,H=190,P=48,k=b?km(a,b):0;
+  if(b&&k<0.15)b=null;
+  var cx=b?(a[1]+b[1])/2:a[1],cy=b?(a[0]+b[0])/2:a[0];
+  var dx=b?Math.abs(b[1]-a[1])*0.793:0,dy=b?Math.abs(b[0]-a[0]):0;
+  var sp=Math.max(dx/(W-2*P),dy/(H-2*P),0.00006);
+  var X=function(p){return W/2+(p[1]-cx)*0.793/sp},Y=function(p){return H/2-(p[0]-cy)/sp};
+  var lab=function(x,y,t,n){var up=y>H/2,an=x>W/2?"end":"start",ty=up?y-28:y+26;return '<text class="mt" x="'+x.toFixed(1)+'" y="'+ty.toFixed(1)+'" text-anchor="'+an+'">'+t+'</text><text x="'+x.toFixed(1)+'" y="'+(ty+14).toFixed(1)+'" text-anchor="'+an+'">'+esc(n.length>24?n.slice(0,23)+"…":n)+'</text>'};
+  var xa=X(a),ya=Y(a),o='<svg class="mp" viewBox="0 0 '+W+' '+(H+(b?34:0))+'" role="img" aria-label="แผนผังเส้นทาง"><defs><pattern id="g" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="var(--line)"/></pattern><marker id="ar" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--a)"/></marker></defs><rect width="'+W+'" height="'+H+'" fill="url(#g)"/><text class="mt" x="'+(W-10)+'" y="16" text-anchor="end">N ↑</text>';
+  if(b){
+    var xb=X(b),yb=Y(b),ex=xb-xa,ey=yb-ya,L=Math.sqrt(ex*ex+ey*ey)||1,t=eta(a,b,s,nx),ic=k<1.2?"🚶":"🚇",tx=ic+" ~"+t+" นาที · "+(k<1?Math.round(k*10)*100+" m":k.toFixed(1)+" km");
+    o+='<line x1="'+(xa+ex/L*12).toFixed(1)+'" y1="'+(ya+ey/L*12).toFixed(1)+'" x2="'+(xb-ex/L*12).toFixed(1)+'" y2="'+(yb-ey/L*12).toFixed(1)+'" stroke="var(--a)" stroke-width="2.5" stroke-linecap="round" marker-end="url(#ar)"/>';
+    o+='<circle cx="'+xb.toFixed(1)+'" cy="'+yb.toFixed(1)+'" r="6" fill="var(--card)" stroke="var(--a)" stroke-width="2.5"/>'+lab(xb,yb,"ต่อไป",nx[1]);
+    o+='<line x1="10" x2="'+(W-10)+'" y1="'+H+'" y2="'+H+'" stroke="var(--line)"/><text class="mt" x="12" y="'+(H+21)+'">ประมาณการ</text><rect x="'+(W-166)+'" y="'+(H+5)+'" width="156" height="24" rx="12" fill="var(--card)" stroke="var(--line)"/><text x="'+(W-88)+'" y="'+(H+21)+'" text-anchor="middle" style="stroke:none">'+tx+'</text>';
+  }
+  o+='<circle cx="'+xa.toFixed(1)+'" cy="'+ya.toFixed(1)+'" r="14" fill="var(--a)" opacity=".18"/><circle cx="'+xa.toFixed(1)+'" cy="'+ya.toFixed(1)+'" r="7" fill="var(--a)"/>'+lab(xa,ya,"ตอนนี้",s[1])+'</svg>';
+  return o+'<p class="cap">'+(b?"ระยะตรงและเวลาเป็นค่าประมาณ · กดปุ่ม Naver Map เพื่อดูเส้นทางและเวลาจริง":(nx?"จุดต่อไปอยู่ที่เดียวกันหรือใกล้กันมาก":"จุดสุดท้ายของทริป"))+'</p>';
+}
+function mapHtmlOld(s,nx){
+  var a=C[s[4]];if(!a)return "";
+  var b=nx&&C[nx[4]],W=320,H=200,P=42,k=b?km(a,b):0;
+  if(b&&k<0.15)b=null;
+  var cx=b?(a[1]+b[1])/2:a[1],cy=b?(a[0]+b[0])/2:a[0];
+  var dx=b?Math.abs(b[1]-a[1])*0.793:0,dy=b?Math.abs(b[0]-a[0]):0;
+  var sp=Math.max(dx/(W-2*P),dy/(H-2*P),0.00006);
+  function X(p){return W/2+(p[1]-cx)*0.793/sp}
+  function Y(p){return H/2-(p[0]-cy)/sp}
+  function lab(x,y,tag,nm){var up=y>H/2,an=x>W/2?"end":"start",ty=up?y-26:y+22;return '<text class="mt" x="'+x.toFixed(1)+'" y="'+ty.toFixed(1)+'" text-anchor="'+an+'">'+tag+'</text><text x="'+x.toFixed(1)+'" y="'+(ty+13).toFixed(1)+'" text-anchor="'+an+'">'+esc(nm.length>24?nm.slice(0,23)+"…":nm)+'</text>'}
+  var xa=X(a),ya=Y(a),o='<svg class="mp" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="แผนผังจุดปัจจุบันและจุดต่อไป"><defs><marker id="ar" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--a)"/></marker></defs><text class="mt" x="'+(W-10)+'" y="16" text-anchor="end">N ↑</text>';
+  if(b){
+    var xb=X(b),yb=Y(b),ex=xb-xa,ey=yb-ya,L=Math.sqrt(ex*ex+ey*ey)||1;
+    o+='<line x1="'+(xa+ex/L*11).toFixed(1)+'" y1="'+(ya+ey/L*11).toFixed(1)+'" x2="'+(xb-ex/L*13).toFixed(1)+'" y2="'+(yb-ey/L*13).toFixed(1)+'" stroke="var(--a)" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#ar)"/>';
+    o+='<circle cx="'+xb.toFixed(1)+'" cy="'+yb.toFixed(1)+'" r="8" fill="var(--card)" stroke="var(--a)" stroke-width="3"/>'+lab(xb,yb,"ต่อไป",nx[1]);
+  }
+  o+='<circle cx="'+xa.toFixed(1)+'" cy="'+ya.toFixed(1)+'" r="8" fill="var(--a)" stroke="var(--card)" stroke-width="3"/>'+lab(xa,ya,"ตอนนี้",s[1])+'</svg>';
+  var cap=b?"ห่างกันตรงๆ ราว "+(k<1?Math.round(k*10)*100+" ม.":k.toFixed(1)+" กม.")+" · แผนผังคร่าวๆ ไม่ใช่แผนที่จริง กด “เส้นทางไปต่อ” เพื่อดูเส้นทางจริง":(nx?"จุดต่อไปอยู่ที่เดียวกันหรือใกล้กันมาก":"จุดสุดท้ายของทริป");
+  return o+'<p class="cap">'+cap+'</p>';
+}
+function render(scroll){
+  var day=D[di];
+  document.documentElement.style.setProperty("--a",day.c);
+  tabs.innerHTML=D.map(function(x,i){return '<button class="tab" role="tab" style="--c:'+x.c+'" aria-selected="'+(i==di)+'" data-d="'+i+'"><b>'+x.d+'</b><span>'+x.w+'</span></button>'}).join("");
+  dt.textContent=day.t;document.getElementById("dl").textContent="DAY "+(di+1);document.getElementById("dp").textContent=day.d+" ("+["จันทร์","อังคาร","พุธ","พฤหัส"][di]+")";
+  list.innerHTML=day.s.map(function(s,i){
+    var on=i==si,nx=day.s[i+1]||(D[di+1]&&D[di+1].s[0]),nl=day.s[i+1]?"ไปจุดต่อไป":(D[di+1]?"ไปวันถัดไป":"จบทริป");
+    var p=on?'<div class="panel"><p>'+esc(s[3])+'</p>'+mapHtml(s,nx)+'<div class="row"><a class="map" target="_blank" rel="noopener" href="'+nvSearch(s)+'"><span class="ic">📍</span>ดูสถานที่<small>Naver Map</small></a>'+(nx?'<a class="map" target="_blank" rel="noopener" href="'+dirUrl(s,nx)+'"><span class="ic">🧭</span>นำทางไปต่อ<small>Naver Map</small></a>':'')+(nx?'<button class="go" data-n="1">'+nl+'</button>':'<button class="go" data-n="1">กลับไปต้นทาง</button>')+'</div>'+(nx?'<p class="next">ต่อไป: '+esc(nx[0])+' '+esc(nx[1])+'</p>':'')+'</div>':'';
+    return '<li class="'+(on?'on':'')+'" id="s'+i+'"><span class="dot"></span><button class="stop" data-i="'+i+'" aria-expanded="'+on+'"><span class="t">'+s[0]+'</span><br><span class="n">'+esc(s[1])+'</span><br><span class="s">'+esc(s[2])+'</span></button>'+p+'</li>';
+  }).join("");
+  if(scroll){var e=document.getElementById("s"+si);if(e)e.scrollIntoView({behavior:window.matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"center"})}
+}
+document.addEventListener("click",function(e){
+  var t=e.target.closest("button");if(!t)return;
+  if(t.dataset.d!==undefined){di=+t.dataset.d;si=0;render(false);window.scrollTo(0,0)}
+  else if(t.dataset.i!==undefined){si=(+t.dataset.i==si)?-1:+t.dataset.i;render(false)}
+  else if(t.dataset.n){
+    if(si<D[di].s.length-1){si++}
+    else if(di<D.length-1){di++;si=0}
+    else{di=0;si=0}
+    render(true);if(si==0)window.scrollTo(0,0);
+  }
+});
+render(false);
+</script>
+</body>
+</html>
