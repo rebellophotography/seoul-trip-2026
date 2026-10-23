@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a0d12" id="tc">
+<title>Seoul 26–29 Oct</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚇</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Noto+Sans+Thai:wght@400;600;700&family=Noto+Sans+KR:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0d12;--card:#141922;--ink:#e6edf3;--mut:#8b949e;--line:#272e38;--a:#f2c94c;--at:#f2c94c;--g:#3fb950;--gt:#3fb950;--glow:14%;--land:#0d1815;--ad:#9a6f00;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="light"]{--bg:#f1f4f8;--card:#fff;--ink:#18202c;--mut:#5b6575;--line:#d8dee7;--gt:#1a7f37;--glow:8%;--land:#e4eee6;color-scheme:light}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+body{margin:0;background:radial-gradient(60% 40% at 100% 28%,color-mix(in srgb,var(--g) var(--glow),transparent),transparent) fixed,var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans","Noto Sans Thai","Noto Sans KR",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+.wrap{max-width:640px;margin:0 auto;padding:16px 16px 48px}
+.ctl{display:flex;justify-content:flex-end;gap:8px;margin:0 0 10px}
+.sg{display:flex;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px}
+.sg button{font:inherit;font-size:.78rem;font-weight:700;border:0;background:transparent;color:var(--mut);border-radius:999px;padding:5px 12px;cursor:pointer}
+.sg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.sg.v{width:100%;margin:0 0 12px}
+.sg.v button{flex:1;padding:8px;font-size:.85rem}
+.hero{background:linear-gradient(160deg,color-mix(in srgb,var(--g) 9%,var(--card)),var(--card) 62%);border:1px solid var(--line);border-radius:26px;padding:18px;margin:0 0 14px;box-shadow:0 24px 60px -36px var(--g)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.pill{font-weight:800;font-size:.74rem;letter-spacing:.06em;color:var(--gt);background:color-mix(in srgb,var(--g) 14%,transparent);border:1px solid color-mix(in srgb,var(--g) 35%,transparent);border-radius:999px;padding:6px 14px}
+.dn{font-weight:700;font-size:.72rem;letter-spacing:.06em;color:var(--mut)}
+h1{font-size:1.6rem;line-height:1.25;margin:16px 0 4px;font-weight:800}
+.lead{margin:0 0 14px;color:var(--mut);font-size:.88rem}
+.fl{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 10px}
+.box{background:color-mix(in srgb,var(--ink) 4%,var(--card));border:1px solid var(--line);border-radius:16px;padding:10px 12px;display:flex;flex-direction:column;gap:2px}
+.bl{font-size:.72rem;font-weight:700;color:var(--mut)}
+.box b{font-size:.95rem;font-weight:800}
+.box small{font-size:.74rem;color:var(--mut)}
+.hotel{flex-direction:row;align-items:center;gap:12px;padding:12px 14px}
+.hotel>div{flex:1;display:flex;flex-direction:column;gap:2px;min-width:0}
+.hi{font-size:1.6rem}
+.bd{font-size:.72rem;font-weight:700;color:var(--gt);background:color-mix(in srgb,var(--g) 12%,transparent);border:1px solid color-mix(in srgb,var(--g) 35%,transparent);border-radius:10px;padding:5px 10px;text-align:center}
+.sub{color:var(--mut);margin:0 0 12px;font-size:.88rem}
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:0 0 0 8px var(--bg);display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:5px;margin:0 8px 8px}
+.tab{font:inherit;cursor:pointer;border:1px solid transparent;background:transparent;color:var(--ink);border-radius:15px;padding:8px 4px;line-height:1.25}
+.tab b{display:block;font-size:1rem}
+.tab span{font-size:.75rem;color:var(--mut)}
+.tab[aria-selected="true"]{background:var(--c);border-color:var(--c);color:#0a0d12;font-weight:700}
+.tab[aria-selected="true"] span{color:#0a0d12}
+button:focus-visible,a:focus-visible{outline:3px solid var(--a);outline-offset:2px}
+.dh{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;margin:20px 0 10px}
+.dl{font-weight:800;font-size:.78rem;letter-spacing:.1em;color:var(--at)}
+h2{font-size:1.3rem;line-height:1.25;font-weight:800;margin:2px 0 0}
+.dp{font-size:.78rem;color:var(--mut);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:5px 10px;white-space:nowrap}
+.tl{list-style:none;margin:0;padding:0}
+.tl li{position:relative;padding-left:38px}
+.tl li::before{content:"";position:absolute;left:11px;top:0;bottom:0;width:6px;background:var(--a)}
+.tl li:first-child::before{top:22px}
+.tl li:last-child::before{bottom:calc(100% - 22px)}
+.tl li:only-child::before{display:none}
+.dot{position:absolute;left:5px;top:12px;width:18px;height:18px;box-sizing:border-box;border-radius:50%;background:var(--card);border:4px solid var(--a);z-index:1;transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .3s,background .2s}
+li.on .dot{background:var(--a);transform:scale(1.4);box-shadow:0 0 0 4px color-mix(in srgb,var(--a) 28%,transparent),0 0 18px 3px var(--a)}
+li.on .stop .n{text-shadow:0 0 14px color-mix(in srgb,var(--a) 60%,transparent)}
+.stop{all:unset;box-sizing:border-box;display:block;width:100%;cursor:pointer;padding:10px 0}
+.stop .t{font-weight:700;color:var(--at);font-size:.9rem}
+.stop .n{font-weight:600;font-size:1.02rem}
+.stop .s{color:var(--mut);font-size:.85rem}
+.panel{margin:0 0 10px;background:var(--card);border:1px solid var(--a);border-radius:16px;padding:12px 14px;box-shadow:0 0 0 1px color-mix(in srgb,var(--a) 30%,transparent),0 10px 30px -10px color-mix(in srgb,var(--a) 55%,transparent)}
+.panel p{margin:0 0 10px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.map,.go{font:inherit;font-weight:600;font-size:.92rem;text-decoration:none;cursor:pointer;border:1px solid var(--a)}
+.map{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-align:center;color:var(--ink);background:color-mix(in srgb,var(--a) 12%,var(--card));border-radius:14px;padding:12px 8px;transition:transform .15s,box-shadow .2s}
+.map small{font-weight:400;font-size:.7rem;color:var(--mut)}
+.ic{font-size:1.5rem;line-height:1.1}
+.go{grid-column:1/-1;color:#0a0d12;background:var(--a);border-radius:14px;padding:12px 14px;transition:transform .15s,box-shadow .2s}
+.map:active,.go:active{transform:scale(.97)}
+.map:hover,.go:hover{box-shadow:0 0 16px -2px var(--a)}
+.next{color:var(--mut);font-size:.8rem;margin:8px 0 0}
+.mp{width:100%;height:auto;display:block;border-radius:10px;background:var(--bg);border:1px solid var(--line);margin:0 0 6px}
+.mp text{font:600 12px "Plus Jakarta Sans","Noto Sans Thai",system-ui,sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--bg);stroke-width:4px}
+.mp text.mt{font-weight:400;font-size:10.5px;fill:var(--mut)}
+.cap{color:var(--mut);font-size:.78rem;margin:0 0 10px !important}
+.sum{font-weight:700;margin:0 0 8px}
+.or{display:flex;gap:10px;align-items:center;width:100%;box-sizing:border-box;text-align:left;font:inherit;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px;cursor:pointer;transition:border-color .2s,box-shadow .2s}
+.or:hover{border-color:var(--a);box-shadow:0 0 14px -4px var(--a)}
+.or small{color:var(--mut)}
+.nb{flex:none;width:28px;height:28px;border-radius:50%;background:var(--a);color:#0a0d12;font-weight:800;font-size:.8rem;display:grid;place-items:center}
+.lg{margin:3px 0 3px 24px;color:var(--mut);font-size:.78rem}
+.rm{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:14px;margin:0 0 16px;box-shadow:0 18px 50px -34px var(--a)}
+.rmb{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 10px}
+.rtag{font-weight:700;font-size:.8rem;color:var(--gt);background:color-mix(in srgb,var(--g) 14%,transparent);border:1px solid color-mix(in srgb,var(--g) 35%,transparent);border-radius:12px;padding:6px 12px}
+.rmb b{font-size:.88rem}
+.chips{display:flex;flex-wrap:wrap;align-items:center;gap:6px;background:color-mix(in srgb,var(--ink) 4%,var(--bg));border:1px solid var(--line);border-radius:16px;padding:10px;margin:0 0 12px}
+.chip{font:inherit;font-weight:700;font-size:.82rem;display:inline-flex;align-items:center;gap:6px;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 12px 4px 4px;cursor:pointer;transition:border-color .2s,box-shadow .2s}
+.chip i{font-style:normal;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--a);color:#0a0d12;font-size:.72rem;font-weight:800}
+.chip:hover{border-color:var(--a);box-shadow:0 0 12px -4px var(--a)}
+.ar{color:var(--mut)}
+.big{display:block;text-align:center;font-weight:700;text-decoration:none;color:#0a0d12;background:var(--a);border-radius:16px;padding:14px;box-shadow:0 8px 24px -10px var(--a);transition:transform .15s}
+.big:active{transform:scale(.98)}
+.alt{display:block;text-align:center;color:var(--mut);font-size:.78rem;margin-top:10px;text-decoration:underline}
+.sh h3{font-size:1.05rem;margin:22px 0 8px;font-weight:800}
+.pg{display:flex;align-items:center;gap:10px;margin:0 0 6px}
+.pb{flex:1;height:8px;border-radius:99px;background:var(--line);overflow:hidden}
+.pb i{display:block;height:100%;background:var(--a);border-radius:99px;transition:width .35s}
+.pg b{font-size:.85rem;color:var(--at)}
+.sum2{color:var(--mut);font-size:.82rem;margin:0 0 10px}
+.ck{position:absolute;right:0;top:10px;width:30px;height:30px;border-radius:50%;border:2px solid var(--line);background:transparent;color:#0a0d12;font:inherit;font-weight:800;cursor:pointer;z-index:2;transition:background .2s,border-color .2s}
+.ck[aria-pressed="true"]{background:var(--a);border-color:var(--a)}
+.tl .stop{padding-right:44px}
+.tl li.done .stop{opacity:.55}
+.tl li.done .stop .n{text-decoration:line-through}
+.bg{display:inline-block;margin:4px 6px 0 0;font-size:.72rem;font-weight:700;color:var(--at);border:1px solid color-mix(in srgb,var(--a) 45%,transparent);background:color-mix(in srgb,var(--a) 12%,transparent);border-radius:8px;padding:2px 8px}
+.tx1{grid-column:1/-1;flex-direction:row !important;gap:12px !important}
+.tx1 .tt{display:flex;flex-direction:column;align-items:flex-start;text-align:left}
+.hero .box.hotel+.box.hotel{margin-top:10px}
+.tx{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.72);display:grid;place-items:center;padding:16px}
+.tx[hidden]{display:none}
+.txc{position:relative;background:var(--card);border:1px solid var(--a);border-radius:22px;padding:18px;max-width:420px;width:100%;box-sizing:border-box;box-shadow:0 0 40px -10px var(--a)}
+.x{position:absolute;right:12px;top:12px;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ink);font:inherit;cursor:pointer}
+.txl{font-weight:800;font-size:.85rem;color:var(--at);padding-right:40px}
+.kb{font-family:"Noto Sans KR","Plus Jakarta Sans",sans-serif;font-size:2rem;font-weight:800;line-height:1.35;margin:14px 0 6px;word-break:keep-all}
+.kp{font-family:"Noto Sans KR",sans-serif;font-size:1.1rem;color:var(--mut);margin:0 0 14px}
+.ke{color:var(--mut);font-size:.8rem;margin-top:12px}
+.kh{color:var(--mut);font-size:.82rem;margin:10px 0 8px}
+.txc textarea,.tb input,.tb select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 12px;min-width:0;width:100%;box-sizing:border-box}
+.txc textarea{font-family:"Noto Sans KR","Plus Jakarta Sans",sans-serif;font-size:1.1rem;margin:0 0 10px;resize:vertical}
+#tools{margin:22px 0 0}
+details.tl2{background:var(--card);border:1px solid var(--line);border-radius:18px}
+details.tl2 summary{cursor:pointer;font-weight:800;padding:14px 16px;list-style:none}
+details.tl2 summary::-webkit-details-marker{display:none}
+.tb{padding:0 16px 16px}
+.fld{display:flex;flex-direction:column;gap:4px;font-size:.78rem;color:var(--mut);font-weight:600}
+.cv{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:end;margin:10px 0}
+.eq{color:var(--mut);padding-bottom:10px}
+.tb h4{margin:16px 0 8px;font-size:.9rem}
+.ef{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 8px}
+#ed,.ef .add{grid-column:1/-1}
+.add{font:inherit;font-weight:700;color:#0a0d12;background:var(--a);border:0;border-radius:12px;padding:11px;cursor:pointer}
+.ex{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.88rem}
+.ex span{flex:1}
+.rm2{border:0;background:transparent;color:var(--mut);font-size:1rem;cursor:pointer}
+.tot{margin:10px 0 4px;font-weight:800}
+#saved{margin:24px 0 0}
+#saved h3{font-size:1.05rem;margin:0 0 4px;font-weight:800}
+.fcs{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 6px}
+.fc{font:inherit;font-size:.8rem;font-weight:700;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer}
+.fc[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.zh{font-weight:800;font-size:.85rem;margin:16px 0 8px}
+.zh small{color:var(--mut);font-weight:400}
+.pc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 14px;margin:0 0 8px}
+.pc.fv{border-color:var(--a)}
+.ph{font-weight:800}
+.pk{color:var(--mut);font-size:.82rem}
+.pd{margin:6px 0 8px;font-size:.88rem}
+.pa{display:flex;flex-wrap:wrap;gap:6px}
+.pa button,.pa a{font:inherit;font-size:.78rem;font-weight:700;text-decoration:none;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:10px;padding:6px 10px;cursor:pointer}
+.pa [aria-pressed="true"]{background:color-mix(in srgb,var(--a) 22%,var(--card));border-color:var(--a)}
+@media (prefers-reduced-motion:no-preference){.panel{animation:pop .3s cubic-bezier(.34,1.4,.64,1);transform-origin:top left}li.on .dot{animation:glow 2.2s ease-in-out infinite}@keyframes pop{from{opacity:0;transform:scale(.94) translateY(-6px)}}@keyframes glow{50%{box-shadow:0 0 0 7px color-mix(in srgb,var(--a) 14%,transparent),0 0 26px 6px var(--a)}}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="ctl" id="ctl"></div>
+  <header class="hero" id="hero"></header>
+  <p class="sub" id="hint"></p>
+  <div class="tabs" id="tabs" role="tablist"></div>
+  <div class="dh"><div><div class="dl" id="dl"></div><h2 id="dt"></h2></div><span class="dp" id="dp"></span></div>
+  <div id="view"></div>
+  <section id="saved"></section>
+  <section id="tools"></section>
+  <div class="tx" id="tx" hidden></div>
+</div>
+<script>
+var D=[
+{d:"26 Oct",w:"จ.",we:"Mon",wt:"จันทร์",c:"#f2c94c",cl:"#9a6f00",t:"Hongdae → Mangwon → Jongno",te:"Hongdae → Mangwon → Jongno",s:[
+["08:00","ICN T1 → บัส 6002","Terminal 1 ชั้น 1 (1F) ประตู 5","ลงเครื่อง 06:35 แล้วขึ้นบัสเข้า Hongdae","Incheon International Airport Terminal 1","ICN T1 → Bus 6002","Terminal 1, 1F, Gate 5","Land at 06:35, then take the bus to Hongdae","ถึง ICN","Arrive ICN"],
+["09:30","L7 Hongdae","141 Yanghwa-ro, Mapo-gu, 03995","ฝากกระเป๋าไว้ก่อน เช็คอิน 15:00","L7 Hongdae by LOTTE","L7 Hongdae","141 Yanghwa-ro, Mapo-gu, 03995","Drop your bags; check-in is at 3 pm","L7","L7"],
+["10:00","Capet Mangwon (คาเฟ่)","Mangwon Exit 2","คาเฟ่ที่ Mangwon","Capet Mangwon Seoul","Capet Mangwon (café)","Mangwon Exit 2","Café in Mangwon","Capet Mangwon","Capet Mangwon"],
+["สาย–บ่าย","รอเช็คอิน เดินเล่น Hongdae","Hongdae","เดินเล่น หรือตัดผมถ้ามีเวลา รอเช็คอิน 15:00","Hongdae Seoul","Wait for check-in, stroll Hongdae","Hongdae","Walk around or get a haircut if there’s time; check-in at 3 pm","เดินเล่น Hongdae","Hongdae walk"],
+["17:30","Seosulla-gil Road","Line 3 Jongno 3(sam)-ga Exit 7, 8 · ~20 นาทีจากฮงแด","เดินเล่นก่อนมื้อค่ำ","Seosulla-gil Seoul","Seosulla-gil Road","Line 3 Jongno 3(sam)-ga Exit 7, 8 · ~20 min from Hongdae","A stroll before dinner","Seosulla-gil","Seosulla-gil"],
+["~19:00","Pojangmacha Street (เต็นท์แดง)","Euljiro 3-ga Exit 4 หรือ Jongno 3(sam)-ga Exit 4","มื้อค่ำ นั่งกินในเต็นท์","Euljiro 3-ga Station Exit 4","Pojangmacha Street (red tents)","Euljiro 3-ga Exit 4 or Jongno 3(sam)-ga Exit 4","Dinner in the street tents","เต็นท์แดง","Red tents"]]},
+{d:"27 Oct",w:"อ.",we:"Tue",wt:"อังคาร",c:"#ff7eb6",cl:"#c2255c",t:"Seongsu → Haebangchon → Yeonnam",te:"Seongsu → Haebangchon → Yeonnam",s:[
+["10:00","Daelim Changgo Cafe + ช้อป","Ttukseom Exit 8 · ย่าน Seongsu / Seoul Forest","คาเฟ่และช้อปปิ้ง","Daelim Changgo Seongsu","Daelim Changgo Café + shopping","Ttukseom Exit 8 · Seongsu / Seoul Forest area","Café and shopping","Daelim Changgo","Daelim Changgo"],
+["~12:30","Somunnan Seongsu Pork Back-bone Stew","ย่าน Seongsu","มื้อกลางวัน ก่อน 17:00 ยังเดิน Seongsu หรือ Seoul Forest ต่อได้","Somunnan Seongsu Pork Back-bone Stew","Somunnan Seongsu Pork Back-bone Stew","Seongsu area","Lunch; there’s time before 5 pm to wander Seongsu or Seoul Forest","Somunnan","Somunnan"],
+["17:00","A Glass of (Haebangchon)","Noksapyeong Exit 2 แล้วต่อแท็กซี่","ร้านปิดวันจันทร์ วันอังคารเปิดตามปกติ","A Glass of Haebangchon Seoul","A Glass of (Haebangchon)","Noksapyeong Exit 2, then a taxi","Closed Mondays, so it’s open on Tuesday","A Glass of","A Glass of"],
+["~19:00","jjukkumi (Yeonnam)","ย่าน Hongdae / Yeonnam","ร้านโลคอลตรงยอนนัม","Yeonnam-dong Jjukkumi Seoul","jjukkumi (Yeonnam)","Hongdae / Yeonnam area","Local spot in Yeonnam","jjukkumi","jjukkumi"]]},
+{d:"28 Oct",w:"พ.",we:"Wed",wt:"พุธ",c:"#3fb950",cl:"#1a7f37",t:"Seochon → Gangnam → Dosan",te:"Seochon → Gangnam → Dosan",s:[
+["10:00","Camel Coffee Seochon","Gyeongbokgung Exit 4","ร้านเปิด 8 โมง","Camel Coffee Seochon Seoul","Camel Coffee Seochon","Gyeongbokgung Exit 4","Opens at 8 am","Camel Coffee","Camel Coffee"],
+["~11:00","Seoul city run: New Balance Bukchon Run Hub","Anguk Exit 2","อาจจะวิ่งวันนี้ก็ได้ (ตัวเลือก)","New Balance Bukchon Run Hub Seoul","Seoul city run: New Balance Bukchon Run Hub","Anguk Exit 2","Optional: you might run today","City run","City run"],
+["~12:00","มื้อกลางวันที่ Seochon","ย่าน Seochon","เลือก 1 ร้าน: Jalppajin Memil (หมูต้ม) หรือ Seochon Guksi Hangureut (บะหมี่เย็น) หรือไปกิน Odarijip Ganjang Gejang ที่ Gangnam (Yeoksam Exit 1) ก่อนเข้า Bongeunsa","Jalppajin Memil Seochon","Lunch in Seochon","Seochon area","Pick one: Jalppajin Memil (boiled pork) or Seochon Guksi Hangureut (cold noodles), or go to Odarijip Ganjang Gejang in Gangnam (Yeoksam Exit 1) before Bongeunsa","มื้อกลางวัน","Lunch"],
+["14:00","Bongeunsa Temple (วัดพงอึนซา)","Line 9 Bongeunsa Exit 1 · ~40 นาทีจากฮงแด","วัดกลางเมือง Gangnam","Bongeunsa Temple Seoul","Bongeunsa Temple","Line 9 Bongeunsa Exit 1 · ~40 min from Hongdae","A temple in the middle of Gangnam","Bongeunsa","Bongeunsa"],
+["17:00","Dosan: Nudake / Supreme / Chrome Hearts","Apgujeong Rodeo Exit 5","ช้อปปิ้งย่าน Dosan","Nudake Dosan Seoul","Dosan: Nudake / Supreme / Chrome Hearts","Apgujeong Rodeo Exit 5","Shopping in Dosan","Dosan","Dosan"],
+["~19:00","Chupungnyeong Kal Grilled Pork Belly","Apgujeong Rodeo Exit 5","ร้านปิด 23:00","Chupungnyeong Kal Apgujeong","Chupungnyeong Kal Grilled Pork Belly","Apgujeong Rodeo Exit 5","Closes at 11 pm","Chupungnyeong","Chupungnyeong"]]},
+{d:"29 Oct",w:"พฤ.",we:"Thu",wt:"พฤหัส",c:"#f0883e",cl:"#b9540b",t:"Hongdae → กลับบ้าน",te:"Hongdae → Home",s:[
+["07:00","คาเฟ่ใน Hongdae","Hongdae","เลือก: Cafe Gongmyeong / Blue Bottle Hongdae / Layered Yeonnam / Brunch Cafe JAMJAM / Parole & Langue (เช็คเวลาเปิดร้านก่อนไป)","Hongdae Seoul","Hongdae cafés","Hongdae","Pick one: Cafe Gongmyeong / Blue Bottle Hongdae / Layered Yeonnam / Brunch Cafe JAMJAM / Parole & Langue (check opening hours)","คาเฟ่ Hongdae","Hongdae cafés"],
+["~10:00","ช้อปปิ้ง Hongdae","Hongdae","ซื้อของฝากชิ้นสุดท้าย","Hongdae Seoul","Shopping in Hongdae","Hongdae","Last souvenirs","ช้อปปิ้ง","Shopping"],
+["~11:30","กินข้าวร้านประจำก่อนกลับ","Hongdae","มื้อสุดท้ายก่อนขึ้นบัส","Hongdae Seoul","Your usual spot for a last meal","Hongdae","Final meal before the bus","มื้อสุดท้าย","Last meal"],
+["13:00","บัส 6002 → ICN","Airport Bus","ถึงสนามบินราว 14:30 (ประมาณการ)","Incheon International Airport Terminal 1","Bus 6002 → ICN","Airport Bus","Reach the airport around 14:30 (estimate)","บัส 6002","Bus 6002"],
+["17:15","YP 601 → BKK","ถึง BKK 21:25","ขอให้เดินทางปลอดภัย","Incheon International Airport Terminal 1","YP 601 → BKK","Arrives BKK 21:25","Safe travels","YP 601","YP 601"]]}
+];
+var C={"Incheon International Airport Terminal 1":[37.4492,126.4512],"L7 Hongdae by LOTTE":[37.5572,126.9246],"Capet Mangwon Seoul":[37.5560,126.9095],"Hongdae Seoul":[37.5563,126.9236],"Seosulla-gil Seoul":[37.5704,126.9922],"Euljiro 3-ga Station Exit 4":[37.5661,126.9926],"Daelim Changgo Seongsu":[37.5440,127.0610],"Somunnan Seongsu Pork Back-bone Stew":[37.5460,127.0560],"A Glass of Haebangchon Seoul":[37.5410,126.9860],"Yeonnam-dong Jjukkumi Seoul":[37.5625,126.9250],"Camel Coffee Seochon Seoul":[37.5772,126.9715],"New Balance Bukchon Run Hub Seoul":[37.5775,126.9855],"Jalppajin Memil Seochon":[37.5775,126.9700],"Bongeunsa Temple Seoul":[37.5146,127.0572],"Nudake Dosan Seoul":[37.5256,127.0390],"Chupungnyeong Kal Apgujeong":[37.5270,127.0380]};
+var K={"Incheon International Airport Terminal 1":"인천국제공항 제1여객터미널","L7 Hongdae by LOTTE":"롯데 L7 홍대","Hongdae Seoul":"홍대입구역","Seosulla-gil Seoul":"서순라길","Euljiro 3-ga Station Exit 4":"을지로3가역 4번 출구","Daelim Changgo Seongsu":"대림창고 성수","Somunnan Seongsu Pork Back-bone Stew":"소문난성수감자탕","Yeonnam-dong Jjukkumi Seoul":"연남동 쭈꾸미","Camel Coffee Seochon Seoul":"카멜커피 서촌","Bongeunsa Temple Seoul":"봉은사","Nudake Dosan Seoul":"누데이크 도산","Chupungnyeong Kal Apgujeong":"추풍령칼삼겹살 압구정"};
+var T={"Incheon International Airport Terminal 1>L7 Hongdae by LOTTE":90,"Hongdae Seoul>Incheon International Airport Terminal 1":90,"Hongdae Seoul>Seosulla-gil Seoul":20};
+var L="th",TH="dark",di=0,si=0;
+try{L=localStorage.getItem("sl")||"th";TH=localStorage.getItem("st")||"dark"}catch(e){}
+function sv(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function $(i){return document.getElementById(i)}
+function tr(a,b){return L=="en"?b:a}
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+function tm(t){return L=="en"?t.replace("สาย–บ่าย","Late AM–PM"):t}
+function nmS(s){return L=="en"?s[5]:s[1]}
+function sbS(s){return L=="en"?s[6]:s[2]}
+function dtS(s){return L=="en"?s[7]:s[3]}
+function km(a,b){var r=Math.PI/180,x=(b[1]-a[1])*r*Math.cos((a[0]+b[0])/2*r),y=(b[0]-a[0])*r;return 6371*Math.sqrt(x*x+y*y)}
+function dist(k){return k<1?Math.round(k*10)*100+" m":k.toFixed(1)+" km"}
+function fmt(m){return m>=60?Math.floor(m/60)+tr(" ชม."," h")+(m%60?" "+m%60+tr(" นาที"," min"):""):m+tr(" นาที"," min")}
+function nm(s){return K[s[4]]||s[4]}
+function nvSearch(s){return "https://map.naver.com/p/search/"+encodeURIComponent(nm(s))}
+function wx(c){return (c[1]*20037508.34/180).toFixed(1)}
+function wy(c){return (Math.log(Math.tan((90+c[0])*Math.PI/360))*6378137).toFixed(1)}
+function dirUrl(s,n){var a=C[s[4]],b=C[n[4]];if(!a||!b)return nvSearch(n);return "https://map.naver.com/p/directions/"+wx(a)+","+wy(a)+","+encodeURIComponent(nm(s))+",,/"+wx(b)+","+wy(b)+","+encodeURIComponent(nm(n))+",,/-/transit"}
+function eta(a,b,s,n){var o=T[s[4]+">"+n[4]];if(o)return o;var r=km(a,b)*1.3,m=r<1.2?r/4.5*60:10+r/28*60;return Math.max(5,Math.round(m/5)*5)}
+function mapHtml(s,nx){
+  var a=C[s[4]];if(!a)return "";
+  var b=nx&&C[nx[4]],W=320,H=190,P=48,k=b?km(a,b):0;
+  if(b&&k<0.15)b=null;
+  var cx=b?(a[1]+b[1])/2:a[1],cy=b?(a[0]+b[0])/2:a[0];
+  var dx=b?Math.abs(b[1]-a[1])*0.793:0,dy=b?Math.abs(b[0]-a[0]):0;
+  var sp=Math.max(dx/(W-2*P),dy/(H-2*P),0.00006);
+  var X=function(p){return W/2+(p[1]-cx)*0.793/sp},Y=function(p){return H/2-(p[0]-cy)/sp};
+  var lab=function(x,y,t,n){var up=y>H/2,an=x>W/2?"end":"start",ty=up?y-28:y+26;return '<text class="mt" x="'+x.toFixed(1)+'" y="'+ty.toFixed(1)+'" text-anchor="'+an+'">'+t+'</text><text x="'+x.toFixed(1)+'" y="'+(ty+14).toFixed(1)+'" text-anchor="'+an+'">'+esc(n.length>24?n.slice(0,23)+"…":n)+'</text>'};
+  var xa=X(a),ya=Y(a),o='<svg class="mp" viewBox="0 0 '+W+' '+(H+(b?34:0))+'" role="img" aria-label="'+tr("แผนผังเส้นทาง","Route sketch")+'"><defs><pattern id="g" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="var(--line)"/></pattern><marker id="ar" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--a)"/></marker></defs><rect width="'+W+'" height="'+H+'" fill="url(#g)"/><text class="mt" x="'+(W-10)+'" y="16" text-anchor="end">N ↑</text>';
+  if(b){
+    var xb=X(b),yb=Y(b),ex=xb-xa,ey=yb-ya,Ln=Math.sqrt(ex*ex+ey*ey)||1,t=eta(a,b,s,nx),ic=k<1.2?"🚶":"🚇",tx=ic+" ~"+t+tr(" นาที"," min")+" · "+dist(k);
+    o+='<line x1="'+(xa+ex/Ln*12).toFixed(1)+'" y1="'+(ya+ey/Ln*12).toFixed(1)+'" x2="'+(xb-ex/Ln*12).toFixed(1)+'" y2="'+(yb-ey/Ln*12).toFixed(1)+'" stroke="var(--a)" stroke-width="2.5" stroke-linecap="round" marker-end="url(#ar)"/>';
+    o+='<circle cx="'+xb.toFixed(1)+'" cy="'+yb.toFixed(1)+'" r="6" fill="var(--card)" stroke="var(--a)" stroke-width="2.5"/>'+lab(xb,yb,tr("ต่อไป","Next"),nmS(nx));
+    o+='<line x1="10" x2="'+(W-10)+'" y1="'+H+'" y2="'+H+'" stroke="var(--line)"/><text class="mt" x="12" y="'+(H+21)+'">'+tr("ประมาณการ","Estimate")+'</text><rect x="'+(W-166)+'" y="'+(H+5)+'" width="156" height="24" rx="12" fill="var(--card)" stroke="var(--line)"/><text x="'+(W-88)+'" y="'+(H+21)+'" text-anchor="middle" style="stroke:none">'+tx+'</text>';
+  }
+  o+='<circle cx="'+xa.toFixed(1)+'" cy="'+ya.toFixed(1)+'" r="14" fill="var(--a)" opacity=".18"/><circle cx="'+xa.toFixed(1)+'" cy="'+ya.toFixed(1)+'" r="7" fill="var(--a)"/>'+lab(xa,ya,tr("ตอนนี้","Now"),nmS(s))+'</svg>';
+  return o+'<p class="cap">'+(b?tr("ระยะตรงและเวลาเป็นค่าประมาณ · กดปุ่ม Naver Map เพื่อดูเส้นทางและเวลาจริง","Straight-line distance and time are estimates · use Naver Map for real routes"):(nx?tr("จุดต่อไปอยู่ที่เดียวกันหรือใกล้กันมาก","The next stop is at the same or a very close place"):tr("จุดสุดท้ายของทริป","Last stop of the trip")))+'</p>';
+}
+function sh(s){return L=="en"?s[9]:s[8]}
+function ovHtml(day){
+  var S=day.s,P=S.map(function(s){return C[s[4]]});
+  var la=P.map(function(p){return p[0]}).sort(function(a,b){return a-b}),lo=P.map(function(p){return p[1]}).sort(function(a,b){return a-b}),md=[la[la.length>>1],lo[lo.length>>1]];
+  var far=P.map(function(p){return km(p,md)>25}),M=[],R=[];
+  S.forEach(function(s,i){if(far[i])return;var j=-1;M.forEach(function(q,x){if(j<0&&km(P[i],q.c)<0.3)j=x});if(j<0){M.push({c:P[i],n:[]});j=M.length-1}M[j].n.push(i+1);if(R[R.length-1]!==j)R.push(j)});
+  var W=320,H=240,E=40,lt=M.map(function(m){return m.c[0]}),ln=M.map(function(m){return m.c[1]});
+  var x0=Math.min.apply(null,ln),x1=Math.max.apply(null,ln),y0=Math.min.apply(null,lt),y1=Math.max.apply(null,lt);
+  var cx=(x0+x1)/2,cy=(y0+y1)/2,sp=Math.max((x1-x0)*0.793/(W-2*E),(y1-y0)/(H-2*E),0.00008);
+  var X=function(c){return W/2+(c[1]-cx)*0.793/sp},Y=function(c){return H/2-(c[0]-cy)/sp};
+  var o='<svg class="mp" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+tr("แผนที่สรุปของวัน","Day overview map")+'"><rect width="'+W+'" height="'+H+'" fill="var(--land)"/><ellipse cx="70" cy="64" rx="96" ry="48" fill="var(--g)" opacity=".08"/><ellipse cx="256" cy="196" rx="104" ry="52" fill="var(--g)" opacity=".08"/><ellipse cx="270" cy="56" rx="60" ry="28" fill="var(--a)" opacity=".06"/><text x="14" y="26" style="stroke:none;font-size:13px;font-weight:800;fill:var(--mut);letter-spacing:.14em">SEOUL</text><text class="mt" x="'+(W-10)+'" y="18" text-anchor="end">N ↑</text>';
+  if(R.length>1){var pts=R.map(function(j){return X(M[j].c).toFixed(1)+","+Y(M[j].c).toFixed(1)}).join(" ");o+='<polyline fill="none" stroke="var(--land)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" points="'+pts+'"/><polyline fill="none" stroke="#ff5c8a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="'+pts+'"/>'}
+  M.forEach(function(m){var t=m.n.join("·"),w=Math.max(28,16+t.length*7),x=X(m.c),y=Y(m.c);o+='<rect x="'+(x-w/2).toFixed(1)+'" y="'+(y-14).toFixed(1)+'" width="'+w+'" height="28" rx="14" fill="#fff" stroke="var(--a)" stroke-width="2.5"/><text x="'+x.toFixed(1)+'" y="'+(y+5).toFixed(1)+'" text-anchor="middle" style="stroke:none;fill:var(--ad);font-size:13px;font-weight:800">'+t+'</text>'});
+  o+='</svg>';
+  var U=[];S.forEach(function(s){if(!U.length||km(C[U[U.length-1][4]],C[s[4]])>=0.15)U.push(s)});
+  var pp=function(s){var c=C[s[4]];return wx(c)+","+wy(c)+","+encodeURIComponent(nm(s))+",,"},La=U[U.length-1],vi=U.slice(1,-1);
+  var nav="https://map.naver.com/p/directions/"+pp(U[0])+"/"+pp(La)+"/"+(vi.length?vi.map(pp).join(":"):"-")+"/transit";
+  var gm="https://www.google.com/maps/dir/?api=1&origin="+encodeURIComponent(U[0][4])+"&destination="+encodeURIComponent(La[4])+(vi.length?"&waypoints="+encodeURIComponent(vi.map(function(s){return s[4]}).join("|")):"")+"&travelmode=transit";
+  var chips=S.map(function(s,i){return '<button class="chip" data-j="'+i+'"><i>'+(i+1)+'</i>'+esc(sh(s))+'</button>'}).join('<span class="ar">→</span>');
+  return '<section class="rm"><div class="rmb"><span class="rtag">🗺 Route Map</span><b>'+tr("เส้นทางรวมของวัน (เรียง 1 ➔ 2 ➔ 3)","Route of the day (order 1 ➔ 2 ➔ 3)")+'</b></div>'+o+'<p class="cap">'+tr("เลขบนแผนที่คือลำดับจุด · แผนผังโดยประมาณ ไม่ใช่แผนที่จริง","Numbers show the stop order · a rough sketch, not a real map")+'</p><div class="chips">'+chips+'</div><a class="big" target="_blank" rel="noopener" href="'+nav+'">📍 '+tr("เปิดเส้นทางรวมวันนี้ใน Naver Map","Open today’s route in Naver Map")+'</a><a class="alt" target="_blank" rel="noopener" href="'+gm+'">'+tr("ถ้า Naver แสดงไม่ครบทุกจุด เปิดทุกจุดใน Google Maps แทน","If Naver doesn’t show every stop, open them all in Google Maps")+'</a></section>';
+}
+function ls(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}}
+function ss(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+var DN=ls("dn",{}),KR=ls("kr",{}),EX=ls("ex",[]),RT=String(ls("rt","")),TX=null,TXE=false;
+var KE={"L7 Hongdae by LOTTE":"서울 마포구 양화로 141","Capet Mangwon Seoul":"망원역 2번 출구","Seosulla-gil Seoul":"3호선 종로3가역 7·8번 출구","Daelim Changgo Seongsu":"뚝섬역 8번 출구","A Glass of Haebangchon Seoul":"녹사평역 2번 출구","Camel Coffee Seochon Seoul":"경복궁역 4번 출구","New Balance Bukchon Run Hub Seoul":"안국역 2번 출구","Bongeunsa Temple Seoul":"9호선 봉은사역 1번 출구","Nudake Dosan Seoul":"압구정로데오역 5번 출구","Chupungnyeong Kal Apgujeong":"압구정로데오역 5번 출구"};
+var BG={"0-1":[["ฝากกระเป๋าได้ · เช็คอิน 15:00","Bag drop · check-in 3 pm"]],"0-3":[["เช็คอิน 15:00","Check-in 3 pm"]],"1-2":[["ปิดวันจันทร์","Closed Mondays"],["ต่อแท็กซี่จาก Noksapyeong","Taxi from Noksapyeong"]],"2-0":[["เปิด 08:00","Opens 08:00"]],"2-1":[["ตัวเลือก","Optional"]],"2-2":[["เลือก 1 ร้าน","Pick one"]],"2-5":[["ปิด 23:00","Closes 23:00"]],"3-0":[["เช็คเวลาเปิดร้าน","Check opening hours"]]};
+function krTxt(s){var c=KR[s[4]];if(c)return c;return [K[s[4]],KE[s[4]]].filter(Boolean).join("\n")}
+function legTot(day){var S=day.s,t=0;for(var i=1;i<S.length;i++){var a=C[S[i-1][4]],b=C[S[i][4]];if(km(a,b)>=0.15)t+=eta(a,b,S[i-1],S[i])}return t}
+function tlHtml(day){
+  return '<ol class="tl">'+day.s.map(function(s,i){
+    var on=i==si,k=di+"-"+i,dn=!!DN[k],nx=day.s[i+1]||(D[di+1]&&D[di+1].s[0]),nl=day.s[i+1]?tr("ไปจุดต่อไป","Next stop"):tr("ไปวันถัดไป","Next day");
+    var bg=(BG[k]||[]).map(function(b){return '<span class="bg">'+esc(L=="en"?b[1]:b[0])+'</span>'}).join("");
+    var p=on?'<div class="panel"><p>'+esc(dtS(s))+'</p>'+mapHtml(s,nx)+'<div class="row"><a class="map" target="_blank" rel="noopener" href="'+nvSearch(s)+'"><span class="ic">📍</span>'+tr("ดูสถานที่","View place")+'<small>Naver Map</small></a>'+(nx?'<a class="map" target="_blank" rel="noopener" href="'+dirUrl(s,nx)+'"><span class="ic">🧭</span>'+tr("นำทางไปต่อ","Directions")+'<small>Naver Map</small></a>':'')+'<button class="map tx1" data-tx="'+i+'"><span class="ic">🚖</span><span class="tt">'+tr("แสดงให้คนขับแท็กซี่ดู","Show to taxi driver")+'<small>한국어 · '+tr("คัดลอกได้","copyable")+'</small></span></button><button class="go" data-n="1">'+(nx?nl:tr("กลับไปต้นทาง","Back to start"))+'</button></div>'+(nx?'<p class="next">'+tr("ต่อไป: ","Next: ")+esc(tm(nx[0]))+' '+esc(nmS(nx))+'</p>':'')+'</div>':'';
+    return '<li class="'+(on?'on ':'')+(dn?'done':'')+'" id="s'+i+'"><span class="dot"></span><button class="ck" data-c="'+i+'" aria-pressed="'+dn+'" aria-label="'+tr("ทำเครื่องหมายว่าไปแล้ว","Mark as visited")+'">'+(dn?'✓':'')+'</button><button class="stop" data-i="'+i+'" aria-expanded="'+on+'"><span class="t">'+esc(tm(s[0]))+'</span><br><span class="n">'+esc(nmS(s))+'</span><br><span class="s">'+esc(sbS(s))+'</span>'+(bg?'<br>'+bg:'')+'</button>'+p+'</li>';
+  }).join("")+'</ol>';
+}
+function secHtml(day){
+  var n=day.s.length,c=day.s.filter(function(s,i){return DN[di+"-"+i]}).length;
+  return '<div class="sh"><h3>🗓 '+tr("ตารางเวลาและรายละเอียดสถานที่","Schedule & place details")+'</h3></div><div class="pg"><div class="pb"><i style="width:'+Math.round(c/n*100)+'%"></i></div><b>'+c+'/'+n+tr(" จุด"," stops")+'</b></div><p class="sum2">'+n+tr(" จุด · เดินทางรวมประมาณ "," stops · travel ≈ ")+fmt(legTot(day))+'</p>'+tlHtml(day);
+}
+function txRender(){
+  var m=$("tx");if(TX===null){m.hidden=true;m.innerHTML="";return}
+  var s=D[di].s[TX],t=krTxt(s),ed=TXE||!t;
+  m.hidden=false;
+  m.innerHTML='<div class="txc" role="dialog" aria-modal="true"><button class="x" data-x="1" aria-label="'+tr("ปิด","Close")+'">✕</button><div class="txl">🚖 '+tr("แสดงให้คนขับแท็กซี่ดู","Show this to your driver")+'</div>'+(ed?'<p class="kh">'+tr("ยังไม่มีชื่อหรือที่อยู่ภาษาเกาหลีของจุดนี้ วางที่นี่แล้วบันทึกไว้ในเครื่องนี้ได้ (คัดลอกจาก Naver Map ก็ได้)","No Korean name or address for this stop yet. Paste it here to save it on this device (you can copy it from Naver Map).")+'</p><textarea id="txt" rows="3" placeholder="한국어">'+esc(KR[s[4]]||t)+'</textarea><div class="row"><button class="go" data-sv="1">'+tr("บันทึก","Save")+'</button></div>':'<div class="kb">'+esc(t).replace(/\n/g,"<br>")+'</div><div class="kp">여기로 가 주세요</div><div class="row"><button class="map" data-cp="1"><span class="ic">📋</span>'+tr("คัดลอก","Copy")+'</button><button class="map" data-te="1"><span class="ic">✏️</span>'+tr("แก้ไขข้อความ","Edit text")+'</button></div>')+'<div class="ke">'+esc(nmS(s))+'</div></div>';
+}
+function cpy(txt,btn){
+  var o=btn.innerHTML,ok=function(){btn.innerHTML='<span class="ic">✓</span>'+tr("คัดลอกแล้ว","Copied");setTimeout(function(){btn.innerHTML=o},1400)};
+  function fb(){var a=document.createElement("textarea");a.value=txt;a.style.position="fixed";a.style.opacity="0";document.body.appendChild(a);a.select();try{document.execCommand("copy");ok()}catch(e){}document.body.removeChild(a)}
+  try{navigator.clipboard.writeText(txt).then(ok,fb)}catch(e){fb()}
+}
+function fn2(n){return n.toLocaleString("en-US",{maximumFractionDigits:2})}
+function rate(){return parseFloat(String(RT).replace(",","."))||0}
+function cvt(src){var r=rate(),a=$("cw"),b=$("cb");if(!a||!b)return;if(src=="cw"){var v=parseFloat(a.value);b.value=r&&v?(v*r).toFixed(2):""}else{var w=parseFloat(b.value);a.value=r&&w?String(Math.round(w/r)):""}}
+function exList(){
+  var el=$("el");if(!el)return;var r=rate(),k=0,b=0;
+  EX.forEach(function(e){if(e.c=="KRW")k+=e.a;else b+=e.a});
+  var h=EX.map(function(e,i){var q=r?(e.c=="KRW"?" ≈ "+fn2(e.a*r)+" THB":" ≈ "+fn2(e.a/r)+" KRW"):"";return '<div class="ex"><span>'+esc(e.d)+'</span><b>'+fn2(e.a)+' '+e.c+q+'</b><button class="rm2" data-del="'+i+'" aria-label="'+tr("ลบ","Delete")+'">✕</button></div>'}).join("");
+  var tt=r?fn2(k+b/r)+" KRW ≈ "+fn2(b+k*r)+" THB":[k?fn2(k)+" KRW":"",b?fn2(b)+" THB":""].filter(Boolean).join(" + ");
+  el.innerHTML=h+(EX.length?'<p class="tot">'+tr("รวม","Total")+': '+tt+'</p>':'<p class="sum2">'+tr("ยังไม่มีรายการ","No entries yet")+'</p>');
+}
+function toolsHtml(){
+  var t=$("tools"),old=t.querySelector&&t.querySelector("details"),op=old&&old.open;
+  t.innerHTML='<details class="tl2"'+(op?' open':'')+'><summary>💰 '+tr("ค่าใช้จ่ายและแปลงเงิน","Expenses & currency")+'</summary><div class="tb"><label class="fld">'+tr("เรต: 1 KRW = กี่บาท (THB)","Rate: 1 KRW = how many THB")+'<input id="rt" inputmode="decimal" placeholder="'+tr("เช่น 0.025","e.g. 0.025")+'" value="'+esc(RT)+'"></label><div class="cv"><label class="fld">KRW<input id="cw" inputmode="numeric" placeholder="0"></label><span class="eq">⇄</span><label class="fld">THB<input id="cb" inputmode="decimal" placeholder="0"></label></div><h4>'+tr("บันทึกค่าใช้จ่าย","Expense log")+'</h4><div class="ef"><input id="ed" placeholder="'+tr("รายการ","Item")+'"><input id="ea" inputmode="decimal" placeholder="'+tr("จำนวนเงิน","Amount")+'"><select id="ec" aria-label="Currency"><option>KRW</option><option>THB</option></select><button class="add" data-ad="1">'+tr("เพิ่มรายการ","Add entry")+'</button></div><div id="el"></div><p class="sum2">'+tr("เรตและรายการเก็บไว้ในเบราว์เซอร์ของเครื่องนี้เท่านั้น","The rate and entries are stored only in this device’s browser")+'</p></div></details>';
+  exList();
+}
+function render(scroll){
+  var r=document.documentElement,day=D[di];
+  r.style.setProperty("--a",day.c);r.style.setProperty("--at",TH=="light"?day.cl:day.c);r.style.setProperty("--ad",day.cl);r.lang=L;
+  $("ctl").innerHTML='<div class="sg" role="group" aria-label="Language"><button data-l="th" aria-pressed="'+(L=="th")+'">TH</button><button data-l="en" aria-pressed="'+(L=="en")+'">EN</button></div><div class="sg" role="group" aria-label="Theme"><button data-th="light" aria-pressed="'+(TH=="light")+'">☀️ Light</button><button data-th="dark" aria-pressed="'+(TH=="dark")+'">🌙 Dark</button></div>';
+  $("hero").innerHTML='<div class="top"><span class="pill">SEOUL TRIP 2026</span><span class="dn">4 DAYS / 3 NIGHTS</span></div><h1>'+tr("โซล 26–29 ตุลาคม","Seoul · 26–29 October")+'</h1><p class="lead">'+tr("แผนเที่ยวโซล ช้อปปิ้ง คาเฟ่ อาหารโลคอล &amp; city run","Seoul trip: shopping, cafés, local food &amp; a city run")+'</p><div class="fl"><div class="box"><div class="bl">✈️ '+tr("ขาไป","Outbound")+' (YP 602)</div><b>25 Oct · 22:55'+tr(" น.","")+'</b><small>'+tr("ถึง ICN 06:35 (26 Oct)","Arrives ICN 06:35 (26 Oct)")+'</small></div><div class="box"><div class="bl">🛬 '+tr("ขากลับ","Return")+' (YP 601)</div><b>29 Oct · 17:15'+tr(" น.","")+'</b><small>'+tr("ถึง BKK 21:25 น.","Arrives BKK 21:25")+'</small></div></div><div class="box hotel"><span class="hi">🏨</span><div><b>L7 Hongdae Hotel</b><small>141 Yanghwa-ro, Mapo-gu · '+tr("เช็คอิน 15:00 น.","Check-in 3 pm")+'</small></div><span class="bd">Airport Bus 6002</span></div><div class="box hotel"><span class="hi">🌤</span><div><b>'+tr("อากาศปลายตุลาคม ราว 7–17°C","Late-October weather: about 7–17°C")+'</b><small>'+tr("เช้า-ค่ำเย็น กลางวันอุ่น พกแจ็กเก็ตบางๆ · ค่าโดยประมาณ ไม่ใช่พยากรณ์","Cool mornings and evenings, mild afternoons · bring a light jacket · typical range, not a forecast")+'</small></div></div>';
+  $("hint").textContent=tr("แตะที่สถานีเพื่อดูรายละเอียด · ติ๊ก ✓ เมื่อไปแล้ว","Tap a stop for details · tick ✓ when you’ve been there");
+  $("tabs").innerHTML=D.map(function(x,i){return '<button class="tab" role="tab" style="--c:'+x.c+'" aria-selected="'+(i==di)+'" data-d="'+i+'"><b>'+x.d+'</b><span>'+(L=="en"?x.we:x.w)+'</span></button>'}).join("");
+  $("dl").textContent="DAY "+(di+1)+" ROUTE MAP";$("dt").textContent=L=="en"?day.te:day.t;$("dp").textContent=day.d+" ("+(L=="en"?day.we:day.wt)+")";
+  $("view").innerHTML=ovHtml(day)+secHtml(day);
+  if(scroll){var e=$("s"+si);if(e)e.scrollIntoView({behavior:window.matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth",block:"center"})}
+  txRender();
+}
+var SF="all",FV=ls("fv",[]),BK=ls("bk",[]);
+var ZN={z1:["Hongdae / Sinchon / Yeonnam / Mapo","ย่านที่พักและใกล้เคียง","Near your hotel"],z2:["Hongdae / Hapjeong","หม้อไฟทะเลและปูดอง","Seafood hotpot & marinated crab"],z3:["Euljiro / Jongno / Gwanghwamun / Seochon","",""],z4:["Seongsu","",""],z5:["Myeongdong","",""],z6:["Gangnam / Apgujeong / Nonhyeon","",""],c1:["Dosan / Hannam-dong","",""],h1:["Haebangchon (Yongsan)","",""],s1:["Cheonggu / Sindang (Jung-gu)","",""]};
+var PL=[
+["f1","f","z1","urebadasusan","우레바다수산","อาหารทะเลสด และซาซิมิปลาเนื้อขาว","Fresh seafood and white-fish sashimi","n","206-5 Donggyo-dong, Mapo-gu"],
+["f2","f","z1","Moggumung Hongdae","목구멍","หมูสามชั้นย่างกระทะฝาหม้อเหล็กเกาหลี (솥뚜껑삼겹살) ย่างพร้อมกิมจิและมินาริ","Pork belly grilled on a Korean iron pot lid, with kimchi and minari","n","Hongdae"],
+["f3","f","z1","Songane","손가네","ข้าวหมูย่างเตาถ่าน / คัมจาทังซุปเล้งสไตล์บ้านๆ","Charcoal-grilled pork rice / home-style gamjatang pork-bone soup","n","Hongdae / Yeonnam"],
+["f4","f","z1","Kukbogam Hongdae","국보감","คัมจาทัง (ซุปเล้ง), โพซัม (หมูนึ่ง), กุกบับ, ข้าวผัดโรยชีส (มีเซ็ตคนเดียว)","Gamjatang (pork-bone soup), bossam (steamed pork), gukbap, cheese fried rice (solo sets available)","",""],
+["f5","f","z1","NURIGAMJATANG","누리마을감자탕","คัมจาทัง / ซุปแก้แฮงค์ (เปิด 24 ชม.)","Gamjatang / hangover soup (open 24 hours)","",""],
+["f6","f","z1","Bongsan Pork","봉산육","หมูสามชั้น / หมู 5 ชั้นย่าง ทานคู่รากโสมย่างและผักชีเกาหลี","Grilled pork belly / five-layer pork, eaten with grilled ginseng root and Korean coriander","",""],
+["f7","f","z1","Musoe Kimchi Samgyeop","무쇠김치삼겹","หมูสามชั้นย่างกระทะเหล็ก โปะผักชีล้อม (มินารี) และกิมจิ","Pork belly on an iron griddle, ringed with minari and kimchi","",""],
+["f8","f","z1","Damsan Sinchon","담산 신촌본점","ซี่โครงหมูผัดเผ็ดสไตล์เกาหลี (Maeun Galbijjim)","Spicy Korean braised pork ribs (Maeun Galbijjim)","",""],
+["f9","f","z1","GOSAMI","고삼이","ปลาย่างเตาถ่าน (ปลาซาบะย่าง) และซุปกิมจิ","Charcoal-grilled fish (mackerel) and kimchi stew","",""],
+["f10","f","z1","Kim Suk-sung","김숙성","หมูสามชั้นย่างบ่ม ทานคู่มินาริย่าง","Aged grilled pork belly with grilled minari","",""],
+["f11","f","z1","Osi Mangwon","오시 망원본점","โอโคโนมิยากิ (พิซซ่าญี่ปุ่น) และยากิโซบะ","Okonomiyaki (Japanese savory pancake) and yakisoba","",""],
+["f12","f","z2","Blue Crab Nara","꽃게나라","ปูม้าดองซีอิ๊วเกาหลี (Ganjang Gejang) และต้มยำปูม้า","Soy-marinated blue crab (ganjang gejang) and tom yum–style blue crab","n","Hongdae / Hapjeong"],
+["f13","f","z2","Sookine Jogae Jeongol","숙이네조개전골","หม้อไฟหอยนึ่งยักษ์ (Seafood & Clam Steamed Pot) รวมหอยและปลาหมึกสดๆ","Giant steamed clam hotpot with fresh shellfish and squid","n","Hongdae / Mapo"],
+["f14","f","z3","Miok Yukhoe","미옥육회","ยุกฮเว (ยำเนื้อวัวดิบ) และบิบิมบับเนื้อดิบสดใหม่","Yukhoe (raw beef tartare) and fresh raw-beef bibimbap","n","ตลาดควางจัง (Jongno 5-ga)|Gwangjang Market (Jongno 5-ga)"],
+["f15","f","z3","Baeknyeon Tojong Samgyetang","백년토종삼계탕","ซุปไก่ตุ๋นโสมเกาหลีสูตรดั้งเดิม ระดับ Michelin Guide","Traditional ginseng chicken soup, Michelin Guide-listed","n","Bukchon / Anguk / Gwanghwamun"],
+["f16","f","z3","Pojangmacha (red tents)","포장마차","สตรีทฟู้ดโต้รุ่ง / กับแกล้มสไตล์เต็นท์แดงเกาหลี","Late-night street food and drinking snacks in Korean red tents","p","Euljiro 3-ga Exit 4"],
+["f17","f","z3","Bu Chon Yukhoe","부촌육회 본점","ยุกฮเว (ยำเนื้อวัวดิบ) ระดับ Michelin Guide","Yukhoe (raw beef tartare), Michelin Guide-listed","","ตลาดควางจัง|Gwangjang Market"],
+["f18","f","z3","Anju Maeul","안주마을","กับแกล้มอาหารทะเลสดตามฤดูกาล","Seasonal fresh seafood side dishes","",""],
+["f19","f","z3","Gwanghwamun Gukbap","광화문국밥","ข้าวซุปหมูน้ำใสกลมกล่อม ระดับ Michelin Guide","Clear pork soup with rice, Michelin Guide-listed","",""],
+["f20","f","z4","Somunnan Seongsu Gamjatang","소문난성수감자탕","หมูเล้งคัมจาทังเจ้าดัง","Well-known gamjatang pork-bone stew","p",""],
+["f21","f","z4","Choigane","최가네버섯샤브매운탕","ชาบูเห็ดซุปเผ็ด / ชาบูเนื้อพร้อมเส้นสด (ร้านโปรดไอดอล)","Spicy mushroom shabu soup / beef shabu with fresh noodles (an idol favourite)","",""],
+["f22","f","z4","Guemguem Seongsu","금금 성수","อาหารเกาหลีฟิวชั่น / พาสต้า-ก๊กซูท็อปหมูสามชั้นนุ่มๆ","Korean fusion: pasta or guksu topped with tender pork belly","",""],
+["f23","f","z5","Seowonjuk","서원죽","โจ๊กเป๋าฮื้อรสเข้มข้นระดับตำนาน (เปิด 07:00–17:00)","Legendary rich abalone porridge (open 07:00–17:00)","",""],
+["f24","f","z5","Odarijip","오다리집","ปูดองเกาหลีรสเข้มข้น (Ganjang Gejang)","Rich soy-marinated crab (ganjang gejang)","p","สาขา Gangnam (Yeoksam Exit 1) เป็นตัวเลือกมื้อกลางวัน Day 3|The Gangnam branch (Yeoksam Exit 1) is a Day 3 lunch option"],
+["f25","f","z6","Haengbok Chupungnyeong Kal Samgyeopsal","추풍령칼삼겹살","หมูสามชั้นบากบั้งย่างกรอบ","Crispy scored pork belly","p","Apgujeong Rodeo"],
+["f26","f","z6","Gangnam Myeonok","강남면옥","คัลบีจิม (ซี่โครงเนื้อตุ๋นชิ้นโต) และแนงมยอน (บะหมี่เย็น)","Galbijjim (braised beef short ribs) and naengmyeon (cold noodles)","",""],
+["f27","f","z6","Gaenmaeul Jogaeteo","","หอยนึ่งสดๆ และอาหารทะเลหม้อไฟสไตล์โลคอล","Fresh steamed shellfish and local-style seafood hotpot","",""],
+["c1","c","c1","Avek Cheri","아베크셰리","คาเฟ่เบเกอรี่สไตล์ฝรั่งเศสสุดพรีเมียม ขนมปังเกลือ (Salt Bread) และทาร์ตผลไม้ขึ้นชื่อ","Premium French-style bakery café, known for salt bread and fruit tarts","n","Hannam-dong / Dosan"],
+["c2","c","c1","NUDAKE Haus Dosan","누데이크 도산","คาเฟ่ดิสเพลย์ขนมหวานสุดชิคย่านโดซาน","Chic dessert-display café in Dosan","p",""],
+["c3","c","z1","Capet Mangwon","","คาเฟ่สไตล์โฮมมี่ย่านมังวอน","Homey café in Mangwon","p",""],
+["c4","c","z1","Blue Bottle / Layered Yeonnam / JAMJAM / Parole & Langue","","คาเฟ่เบเกอรี่ บรันช์ และกาแฟชื่อดังย่านฮงแด-ยอนนัม","Well-known bakery cafés, brunch and coffee around Hongdae–Yeonnam","p",""],
+["c5","c","z4","Daelim Changgo","대림창고","คาเฟ่โกดังศิลปะสุดเท่ย่านซองซู","Cool art-warehouse café in Seongsu","p",""],
+["c6","c","z3","Camel Coffee (Seochon Branch)","","กาแฟครีมมี่สไตล์วินเทจ ย่านซอชอน","Creamy vintage-style coffee in Seochon","p",""],
+["c7","c","s1","pi.po","피뽀","คาเฟ่บรันช์ & บาร์ไวน์ (เซ็ตขนมปัง ครัวซองต์ แฮม ชีส และผลมะเดื่อสด)","Brunch café and wine bar (bread, croissant, ham, cheese and fresh figs)","","Cheonggu Station (Line 5 · 6)"],
+["c8","c","h1","Dansho (Haebangchon branch)","단쇼 해방촌점","โอเด้งบาร์ & อิซากายะ นั่งชิลยามค่ำคืน","Oden bar and izakaya for a relaxed night out","","เปิด 17:00 · มีสาขา Yeonhui (Seodaemun) ด้วย|Opens 17:00 · also a Yeonhui branch (Seodaemun)"],
+["c9","c","z3","Supyogyo Hof (Euljiro main branch)","수표교호프 을지로본점","ร้านเบียร์ชิลๆ ยามค่ำคืน กดเบียร์สดเองได้","Laid-back evening beer hall with self-pour draft beer","","Euljiro 3-ga Station"]];
+function tg(a,id,key){var i=a.indexOf(id);if(i<0)a.push(id);else a.splice(i,1);ss(key,a);savedHtml()}
+var AK=["z1","z2","z3","z4","z5","z6","c1","h1","s1"],ZS={h1:"Haebangchon",s1:"Cheonggu",z1:"Hongdae / Mapo",z2:"Hapjeong",z3:"Euljiro / Jongno",z4:"Seongsu",z5:"Myeongdong",z6:"Gangnam",c1:"Dosan / Hannam"};
+function an(z){return ZS[z]||tr(ZN[z][1],ZN[z][2])}
+function savedHtml(){
+  var vis=PL.filter(function(p){return SF=="all"||(SF=="fav"&&FV.indexOf(p[0])>=0)||(SF=="bak"&&BK.indexOf(p[0])>=0)||SF==p[2]});
+  var cs=[["all",tr("ทุกย่าน ","All areas ")+PL.length],["fav","⭐ "+FV.length],["bak","🛟 "+tr("สำรอง ","Backup ")+BK.length]].concat(AK.map(function(z){return [z,an(z)+" "+PL.filter(function(p){return p[2]==z}).length]}));
+  var h=AK.map(function(z){
+    var it=vis.filter(function(p){return p[2]==z});if(!it.length)return "";
+    var n=ZN[z],nm0=n[0]||tr(n[1],n[2]),sub=n[0]&&n[1]?' · '+tr(n[1],n[2]):'',nf=it.filter(function(p){return p[1]=="f"}).length,nc=it.length-nf;
+    return '<div class="zh">📍 '+esc(nm0)+' <small>'+esc(sub)+(sub?' · ':' · ')+(nf?'🍱 '+nf+' ':'')+(nc?'☕ '+nc:'')+'</small></div>'+it.map(function(p){
+      var f=FV.indexOf(p[0])>=0,b=BK.indexOf(p[0])>=0,lc=p[8]?(p[8].indexOf("|")>=0?p[8].split("|")[L=="en"?1:0]:p[8]):"";
+      return '<div class="pc'+(f?' fv':'')+'"><div class="ph">'+(p[1]=="f"?"🍱 ":"☕ ")+esc(p[3])+(p[7].indexOf("n")>=0?' <span class="bg">'+tr("ร้านใหม่","New")+'</span>':'')+(p[7].indexOf("p")>=0?' <span class="bg">📌 '+tr("อยู่ในแผน","In your plan")+'</span>':'')+'</div>'+((p[4]||lc)?'<div class="pk">'+esc([p[4],lc].filter(Boolean).join(" · "))+'</div>':'')+'<p class="pd">'+esc(L=="en"?p[6]:p[5])+'</p><div class="pa"><button data-fv="'+p[0]+'" aria-pressed="'+f+'">⭐ Favorite</button><button data-bk="'+p[0]+'" aria-pressed="'+b+'">🛟 '+tr("ร้านสำรอง","Backup")+'</button><a target="_blank" rel="noopener" href="https://map.naver.com/p/search/'+encodeURIComponent(p[4]||p[3])+'">📍 Naver Map</a></div></div>'}).join("")}).join("");
+  $("saved").innerHTML='<h3>⭐ Saved places</h3><p class="sum2">'+tr("แยกตามย่าน · ⭐ = ร้านที่อยากไป · 🛟 = ร้านสำรองเมื่อร้านปิดหรือคนเยอะ · เก็บไว้ในเบราว์เซอร์ของเครื่องนี้","Grouped by area · ⭐ = want to go · 🛟 = backup for when a place is closed or crowded · saved in this device’s browser")+'</p><div class="fcs">'+cs.map(function(c){return '<button class="fc" data-sf="'+c[0]+'" aria-pressed="'+(SF==c[0])+'">'+esc(c[1])+'</button>'}).join("")+'</div>'+(h||'<p class="sum2">'+tr("ยังไม่มีรายการ กด ⭐ หรือ 🛟 ที่การ์ดร้านเพื่อเพิ่ม","Nothing here yet. Tap ⭐ or 🛟 on a place card to add it.")+'</p>');
+}
+function applyTheme(){document.documentElement.setAttribute("data-theme",TH);$("tc").setAttribute("content",TH=="light"?"#f1f4f8":"#0a0d12")}
+document.addEventListener("click",function(e){
+  if(e.target.id=="tx"){TX=null;txRender();return}
+  var t=e.target.closest("button");if(!t)return;var d=t.dataset;
+  if(d.l){L=d.l;sv("sl",L);render(false);toolsHtml();savedHtml()}
+  else if(d.th){TH=d.th;sv("st",TH);applyTheme();render(false)}
+  else if(d.d!==undefined){di=+d.d;si=0;TX=null;render(false);window.scrollTo(0,0)}
+  else if(d.i!==undefined){si=(+d.i==si)?-1:+d.i;render(false)}
+  else if(d.j!==undefined){si=+d.j;render(true)}
+  else if(d.c!==undefined){var k=di+"-"+d.c;if(DN[k])delete DN[k];else DN[k]=1;ss("dn",DN);render(false)}
+  else if(d.n){if(si<D[di].s.length-1){si++}else if(di<D.length-1){di++;si=0}else{di=0;si=0}render(true);if(si==0)window.scrollTo(0,0)}
+  else if(d.tx!==undefined){TX=+d.tx;TXE=false;txRender()}
+  else if(d.x){TX=null;txRender()}
+  else if(d.cp){cpy(krTxt(D[di].s[TX]),t)}
+  else if(d.te){TXE=true;txRender()}
+  else if(d.sv){var v=$("txt").value.trim(),q=D[di].s[TX][4];if(v)KR[q]=v;else delete KR[q];ss("kr",KR);TXE=false;txRender()}
+  else if(d.fv){tg(FV,d.fv,"fv")}
+  else if(d.bk){tg(BK,d.bk,"bk")}
+  else if(d.sf){SF=d.sf;savedHtml()}
+  else if(d.ad){var a=parseFloat($("ea").value.replace(",","."));if(!(a>0))return;EX.push({d:$("ed").value.trim()||tr("ค่าใช้จ่าย","Expense"),a:a,c:$("ec").value});ss("ex",EX);$("ed").value="";$("ea").value="";exList()}
+  else if(d.del!==undefined){EX.splice(+d.del,1);ss("ex",EX);exList()}
+});
+document.addEventListener("input",function(e){var id=e.target.id;if(id=="rt"){RT=e.target.value;ss("rt",RT);cvt("cw");exList()}else if(id=="cw"||id=="cb")cvt(id)});
+document.addEventListener("keydown",function(e){if(e.key=="Escape"&&TX!==null){TX=null;txRender()}});
+applyTheme();render(false);toolsHtml();savedHtml();
+</script>
+</body>
+</html>
